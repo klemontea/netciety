@@ -11,7 +11,7 @@ All technologies involved in the creation of this website are as follows:
 - SQL
 
 ## How to Use
-I don't host my website online, and so you need software that use your PC as a server like XAMPP, MAMP, etc. Because I use XAMPP when developing this website, I will explain how to use it in order to make the website work. /n
+I don't host my website online. Therefore, you need a software that acts like a server (XAMPP, MAMP, etc.). Because I use XAMPP when developing this website, I will explain how to use it in order to make the website work. /n
 - Download and install XAMPP on your computer
 - Navigate to htdocs folder
 - Inside this folder, create a folder called 'netciety' (all lowercase)
