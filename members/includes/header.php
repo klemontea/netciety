@@ -40,7 +40,7 @@
 
         <div class="dropdown mr-1 text-light">
             <a class="btn btn-sm btn-dark px-3 dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <?php echo (empty($_SESSION['fname'])) ?  $_SESSION['username'] : $_SESSION['fname']; ?>
+                <?php echo (empty($_SESSION['fname'])) ?  ucfirst($_SESSION['username']) : $_SESSION['fname']; ?>
             </a>
             <div class="dropdown-menu dropdown-menu-right bg-warning text-light" aria-labelledby="dropdownMenuLink">
                 <a class="dropdown-item" href="/netciety/members/dashboard/">Dashboard</a>
