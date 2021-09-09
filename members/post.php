@@ -30,6 +30,7 @@ if (isset($_GET['pid']) && isset($_GET['prev'])) {
     $username = getUsername($user_id);
     $fname = ucfirst(getFirstName($user_id));
     $lname = ucfirst(getLastName($user_id));
+    $image = getImage($user_id);
     $content = $post_row['post_content'];
     $image = $post_row['post_image'];
     $date = $post_row['post_date'];
@@ -51,7 +52,7 @@ if (isset($_GET['pid']) && isset($_GET['prev'])) {
         <!-- Post -->
         <div class="media mt-2 p-3 border w-100">
             <a class="mr-5" href="Fprofiles?user=<?php echo $username; ?>">
-                <img src="../images/memberphoto.png" alt="Member Profile Photo" class="border border-dark rounded-circle" style="width:45px; max-height:45px;">
+                <img src=<?php echo (empty($image)) ? "../images/memberphoto.png" : "images/$image"; ?> alt="Member Profile Photo" class="border border-dark rounded-circle" style="width:45px; max-height:45px;">
             </a>
 
             <div class="media-body">
@@ -133,6 +134,7 @@ if (isset($_GET['pid']) && isset($_GET['prev'])) {
                 while ($comment_row = mysqli_fetch_array($getComments)) {
 
                     $user_id = $comment_row['comment_user_id'];
+                    $image = getImage($user_id);
                     $content = $comment_row['comment_content'];
                     $date = $comment_row['comment_date'];
 
@@ -149,7 +151,7 @@ if (isset($_GET['pid']) && isset($_GET['prev'])) {
                     <div class="media mt-3 collapse" id="comment<?php echo $pid; ?>">
 
                         <a class="mr-5" href="#">
-                            <img src="..." alt="...">
+                            <img src=<?php echo (empty($image)) ? "../images/memberphoto.png" : "images/$image"; ?> alt="Member Profile Picture" class="border border-dark rounded-circle" style="width:45px; max-height:45px;">
                         </a>
                         <div class="media-body">
                             <p class="m-0 pt-1"><strong><a href=""><?php echo empty($fname) ? ucfirst($username) : $fname . ' ' . $lname; ?></a></strong></p>
