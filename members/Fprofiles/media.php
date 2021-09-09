@@ -25,24 +25,17 @@ $name = (empty($f_fname)) ? ucfirst($f_username) : ucfirst($f_fname);
         while ($row = mysqli_fetch_array($imageQuery)) {
 
             $img_id = $row['image_id'];
-            $image = getImage($img_id);
+            $image = $row['image_picture'];
 
             if (!empty($image)) {
 
     ?>
 
-                <!-- <div class="col-4">
-                <div class="thumbnail w-75 mx-auto mt-4">
-                    <a href="">
-                        <img src="../images/<?php echo $image; ?>" alt="Lights" style="width:100%">
-                    </a>
-                </div>
-            </div> -->
                 <div class="col-4">
                     <div class="thumbnail mx-auto d-flex flex-column mt-4">
                         <img src=" ../images/<?php echo $image; ?>" alt="Lights" style="width:100%">
 
-                        <button type=" button" class="btn btn-sm btn-outline-dark my-1" data-toggle="modal" data-target="#img<?php echo $img_id; ?>" style="width:40%;">
+                        <button type=" button" class="btn btn-sm btn-outline-dark my-1 w-100" data-toggle="modal" data-target="#img<?php echo $img_id; ?>" style="width:40%;">
                             View
                         </button>
                     </div>
