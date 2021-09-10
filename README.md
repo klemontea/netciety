@@ -2,7 +2,8 @@
 A social media website for people to connect and share their lives
 
 ## Introduction
-This is my first website project which uses three layers architecture (front-end, back-end, and database) and part of my portfolios. The website is called Netciety, a social media website like facebook, twitter, etc. I tried to create this website to be like but not similar to them. Through this website, users can interact with their friends by posting or sharing their lives in form of text or photo.
+This is my first website project which uses three layers architecture (front-end, back-end, and database) and part of my portfolios. The website is called Netciety, a social media website like facebook, twitter, etc. I tried to create this website to be like but not similar to them. Through this website, users can interact with their friends by posting or sharing their lives in form of text or photo.  
+
 The features that you can do in this website for now are as follows:
 - Search friend
 - Add and Unfriend friend
