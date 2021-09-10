@@ -148,7 +148,7 @@ if (isset($_GET['pid']) && isset($_GET['prev'])) {
                 ?>
 
                     <!-- Comments -->
-                    <div class="media mt-3 collapse" id="comment<?php echo $pid; ?>">
+                    <div class="media mt-3 collapse show" id="comment<?php echo $pid; ?>">
 
                         <a class="mr-5" href="#">
                             <img src=<?php echo (empty($image)) ? "../images/memberphoto.png" : "images/$image"; ?> alt="Member Profile Picture" class="border border-dark rounded-circle" style="width:45px; max-height:45px;">
