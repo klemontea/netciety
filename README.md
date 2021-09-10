@@ -27,3 +27,6 @@ I don't host my website online. Therefore, you need a software that acts like a 
 - Download and put all files and folders in this repository into 'netciety' folder
 - Open Phpmyadmin in your localhost
 - Import 'netciety.sql' file into Phpmyadmin
+
+## Notes!
+You can create a new member by register. However, if you want to use existing member from database, you have to input username with username in database. For password, it is similar to username.
